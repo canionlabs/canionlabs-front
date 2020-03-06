@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased !important;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.main {
+    display: flex;
+}
+
+div.logo {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0A1124;
+}
+
+div.logo img {
+    width: 400px;
+    height: 200px;
+}
+
+div.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+}
+
+div.infos h1 {
+    color: #8BC34A;
+}
+
+div.infos .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.infos .contacts span {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    margin-top: 10px;
+}
+
+div.infos .contacts span img {
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+div.infos .contacts span:last-child {
+    margin-top: 5px;
+}
+
+div.infos .social ul {
+    display: flex;
+    list-style: none;
+}
+
+div.infos .social ul li {
+    margin-left: 40px;
+}
+
+div.infos .social ul li:first-child {
+    margin-left: 0;
+}
+
+div.infos .social ul li img {
+    width: 45px;
+    height: 45px;
+}
+
+div.infos .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+div.infos .products span {
+    font-size: 20px;
+    color: #0A1124;
+}
+
+div.infos .products a img {
+    margin-top: 30px;
+    width: 240px;
+    height: 100px;
+}
+
+@media only screen and (max-width: 850px){
+    div.main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.logo {
+        width: 100%;
+    }
+
+    div.infos {
+        width: 100%;
+    }
+}
